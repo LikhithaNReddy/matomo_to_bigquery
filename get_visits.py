@@ -34,7 +34,8 @@ def get_basic_metrics():
     r = requests.get(my_url)
 
     # parse and tidy collected data
-    data = pd.DataFrame(r.json()).T
+    data = pd.DataFrame((r.json()))
+    data=data.T
     data = data.reset_index()
     #data.astype(str)
 
