@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
 
     data = get_basic_metrics()
-    upload_to_bq(data)
+    upload_to_bq(data).astype(str)
 
     # tell healthchecks.io the script is finished
     requests.get(healthcheck_url)
