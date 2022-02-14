@@ -36,6 +36,7 @@ def get_basic_metrics():
     # parse and tidy collected data
     data = pd.DataFrame(r.json()).T
     data = data.reset_index()
+    
 
     data.columns = [
         "date",
@@ -87,7 +88,7 @@ if __name__ == "__main__":
 
 
     data = get_basic_metrics()
-    upload_to_bq(data).astype(str)
+    upload_to_bq(data)
 
     # tell healthchecks.io the script is finished
     requests.get(healthcheck_url)
