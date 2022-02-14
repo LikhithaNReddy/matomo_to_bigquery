@@ -19,7 +19,7 @@ def get_basic_metrics():
     token = os.getenv("TOKEN")
 
     # Build url string
-    base_url = 'https://marquinsmith.com/piwik/piwik?module=API'
+    base_url = 'https://matomo.more-fire.com/index.php?module=API'
     site_num = '&idSite=1'
     return_format = '&format=json'
     period = '&period=day'
@@ -71,7 +71,7 @@ def upload_to_bq(a_dataframe):
     )
 
     a_dataframe.to_gbq(
-        "marquinsmith_dot_com.basicmetrics",
+        "matomo_dataset.dataset",
         project_id=project_id,
         if_exists="replace",
         credentials=credentials,
