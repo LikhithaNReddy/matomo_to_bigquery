@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "morefire-developer-project",
+  "private_key_id": "88960875fc3af91f173f5c33f7742f14b43df2e2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCj/ghj9dSC4qy0\nVnkxY9b8T9iDCnJFi9kpCDZzUzMUINO0fCW/7lgHRBEHBEChmxHGXOFQwFfBYq17\nNET5FgD1J6hE1eMtNwE/J0nm7Iae01gGov1768TrtOU0k3KyPv8btayEeg5Y7Jd/\nsO/7g6LlnrfxsTaLqbMQV+2MZd2UyXfgrJajXS1Z02adTWbB2pDgdy56kIG/8qSv\nQZDY0roK9GZUm/ralfV+Xc0lVm/3JLA5asiG/blGC2eKnDmXNBhOqV9oHodgkPbU\n8liVgA2bD7hgUFh9NXTBKUGGLQ5RJreVR+Whu4QQlWQj3ZzThFLjJ2tdkTw94STL\nHSptDOkzAgMBAAECggEAKBKm3TpQlC0s06J/2exSN/SQ7TCLzOfICIlLuPGfPS9q\nXCOsG9Lzqs7ctFC7NGJOvSCsJE3kA8sHpmAW7KEOWdm3eh6j9UQIJ3UDz4yDtuLh\nEzoX5ASwaYKaMbdIIztWnmBOCE9FG0CxIpBLjDPWBfM7crGBqS4uJfO+hfzMYRNX\n2aLcGFNLJhdfrUrAKegn9mhvRYhJGW3DL1izbtL1hGsl8azhnOl8H43wqj6CJ00y\nxYooC4+C691ch6DaBJ1oFsJudFARlF/R5SID6DsLgY6pWSpXcyFSEMhtpm/Smqcr\nfe3XKhYFMfd1iBAHPfYZ91XZv4QcBKAI04Jo/EU3vQKBgQDW+R0GNW8/J2eqGRuW\n0mjgA2orIsnR+R18gE5Ara/vUuHUwgf+laaXaPTun8QI+e96thPHGLqfVxC7deY4\nZeIjf5YidEJmlRg4mFk83FgfdZm35qkrERnDddynuC74QaCd7iQNVnjfiiSn4g2e\nN9STiReXvu6wpKHra8DPGvesFwKBgQDDSioBKAK0PD5bcx+KoKud0NLUtrJ6lNss\ndz0fLjT0Nh2b3LCQG0qMXnp5SFYrp2ZlMavIjQBYmUSx3imLrPovP9AKIXdXVppp\ni9Tq3ht1MLhV0xrc3R8WGulCiK4FpuLiw9pJO5l8yxqKoTR/pLRwvG5909pdvYya\nTtYBrdIRRQKBgBJfTfS24mASXRCzfqEgMGhcwlkXawov8S4vxQBQF8YrXjORtZ8z\naP5tsOkn7FgcDDR/lSch3Ok7RqnOxLMzOeVwxQMCzp33xg8oLhA+gKWHpnCKHREa\nMAp9azNGUXVUHocA0EH3jvMD2mgisKlB+j/1qneEkN+14kS9e8f3dQ1XAoGAGh/O\ntK7khbXVZahl3MaXjpoDyh7Si2FkXHNrAsPMo6qllVcVa4GrHFH7MkRB+r7/DKRz\nZXWvSSrfrKeaiSvPoAh6TRCjBVT5fQsOpYimxauJzTlbS5Zs9SkOcS8VkH39tfYb\nOla1tqL43vinrDedR8N9SGnRuV6E85N+P2VAR70CgYEA1SKZQ0ZGaLQ28ADLTZx7\nHImxHgTdgTY9LtKh9OoiyrhMrRelb/1p3aSCoCmZXq+bdWD1dtdhY5AIbXVb9HDQ\ndKNRgyDosRK/KEmfSrfG3nCnoBjIcnAbWWBqG1lWufDLQw93l9/9nnw2Bg49aLwb\nMrYsP0zBBxXqbyF4wgNsWnY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "garden-temp@morefire-developer-project.iam.gserviceaccount.com",
+  "client_id": "104008022569876869361",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/garden-temp%40morefire-developer-project.iam.gserviceaccount.com"
+}

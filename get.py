@@ -1,31 +1,24 @@
-import json
-from piwikapi.analytics import PiwikAnalytics
-from dotenv import load_dotenv
+from distutils import errors
+from google.cloud import bigquery
 import os
-import requests
+import logging 
 import pandas as pd
-from google.oauth2 import service_account
+credentials_path= '/Users/l.reddy/matomo_to_bigquery/matomo_to_bigquery/uselfortest.json'
+os.environ['GOOGLE_APPLICATION_CREDENCIALS']=credentials_path
 
-# load variables into environment
-load_dotenv()
-token = os.getenv("TOKEN")
-
-    # Build url string
-base_url = 'https://matomo.more-fire.com/index.php?module=API'
-site_num = '&idSite=1'
-return_format = '&format=json'
-period = '&period=day'
-date_range = '&date=last30'
-method = '&method=VisitsSummary.get'
-token_string = "&token_auth=" + token
-
-my_url = base_url + site_num + return_format + period + date_range + method + token_string
+client=bigquery.Client()
+table_id = 'morefire-developer-project.garden.test '
 
 
-            # send request for report
-r = requests.get(my_url)
-data = pd.DataFrame((r.json()),index=[0]).T
-data = data.reset_index()
-data
 
-print(data.head(10))
+rows_to_insert=[
+        {u"sensorName":'gar-001',u"temerature":"32",u"humidity":"32.8"},
+        {u"sensorName":'gar-003',u"temerature":"34.7",u"humidity":"39.8"}
+    ]
+
+
+errors=client.insert_rows_json(table_id,rows_to_insert)
+if errors==[]:
+    print("new rows added")
+else:
+    print(f'encounters errors : {errors}')

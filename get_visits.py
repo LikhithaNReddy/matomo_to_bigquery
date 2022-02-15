@@ -37,8 +37,8 @@ def get_basic_metrics():
     data = pd.DataFrame((r.json()))
     data=data.T
     data = data.reset_index()
-    #data.astype(str)
-    #covert int to sting 
+    
+    #covert int to string 
     
     data['date']=pd.to_datetime(data['date'], errors ='coerce', format='%Y-%m-%d')
     data['uniq_visitors']=data['uniq_visitors'].astype(str)
