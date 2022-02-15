@@ -38,6 +38,21 @@ def get_basic_metrics():
     data=data.T
     data = data.reset_index()
     #data.astype(str)
+    #covert int to sting 
+    
+    data['date']=pd.to_datetime(data['date'], errors ='coerce', format='%Y-%m-%d')
+    data['uniq_visitors']=data['uniq_visitors'].astype(str)
+    data['users']=data['users'].astype(str)
+    data['visits']=data['visits'].astype(str)
+    data['actions']=data['actions'].astype(str)
+    data['visits_converted']=data['visits_converted'].astype(str)
+    data['bounces']=data['bounces'].astype(str)
+    data['sum_visit_length']=data['sum_visit_length'].astype(str)
+    data['max_actions']=data['max_actions'].astype(str)
+    data['bounce_rate']=data['bounce_rate'].astype(str)
+    data['actions_per_visit']=data['actions_per_visit'].astype(str)
+    data['avg_time_on_site']=data['avg_time_on_site'].astype(str)
+ 
 
     data.columns = [
         "date",
