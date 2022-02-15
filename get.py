@@ -3,7 +3,7 @@ from google.cloud import bigquery
 import os
 import logging 
 import pandas as pd
-credentials_path= '/Users/l.reddy/matomo_to_bigquery/matomo_to_bigquery/uselfortest.json'
+credentials_path= '/Users/l.reddy/matomo_to_bigquery/matomo_to_bigquery/morefire-developer-project-0460aa013d20.json'
 os.environ['GOOGLE_APPLICATION_CREDENCIALS']=credentials_path
 
 client=bigquery.Client()
